@@ -157,9 +157,9 @@ $conn->close();
 
   <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Catalog</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#catalog">Catalog</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
   </div>
 
@@ -185,6 +185,7 @@ $conn->close();
   </div>
 </nav>
 
+<section id="home">
 <div class="container">
   <div id="cardCarousel" class="carousel slide carousel-fade carousel-card" data-bs-ride="carousel" data-bs-interval="3000">
     <div class="carousel-inner">
@@ -219,6 +220,7 @@ $conn->close();
     </div>
   </div>
 </div>
+</section>
 
 <div class="container my-4">
   <div class="row align-items-center">
@@ -256,6 +258,7 @@ $conn->close();
   </div>
 </div>
 
+<section id="catalog">
 <div class="container my-5">
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <?php if ($result->num_rows > 0): ?>
@@ -287,7 +290,9 @@ $conn->close();
     <?php endif; ?>
   </div>
 </div>
+</section>
 
+<section id="contact">
 <footer class="bg-dark text-white pt-4 pb-3">
   <div class="container text-md-left">
     <div class="row text-md-left">
@@ -304,6 +309,7 @@ $conn->close();
     </div>
   </div>
 </footer>
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
